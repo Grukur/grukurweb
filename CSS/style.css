@@ -9,18 +9,44 @@ html {
     padding: 0;
 }
 
-@media screen and (min-width: 1024px) {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.foot {
+    background-color: darkmagenta;
+}
+
+@media screen and (min-width: 500px) {
     .header {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .menu ul{
         display: flex;
+        flex-direction: column;
     }
     .menu li {
-        padding: 5px;
+        padding: 0.5rem;
+        flex-direction: column;
     }
+
+    .parraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 }
 
 .bg-webpage {
@@ -45,7 +71,6 @@ hr {
     font-size: 20px;
     text-align: center;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title-table {
@@ -67,6 +92,7 @@ hr {
 }
 
 .parraph {
+    display: flex;
     font-size: 20px;
     color: rgb(1, 0, 82);
     text-align: center;
@@ -74,10 +100,7 @@ hr {
 }
 
 .link-own {
-    font-size: 20px;
     text-align: center;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
 }
 
@@ -90,11 +113,12 @@ hr {
     align-items: center;
     border: medium solid navy;
     padding: 5px;
+    justify-content: space-around;
 }
 
 .items {
-    border: medium solid #150;
-    background-color: #666;
+    border: thin solid plum;
+    background-color: darkmagenta;
     padding: 5px;
     width: 50px;
     height: 50px;
@@ -105,14 +129,7 @@ hr {
 
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.menu {
+.menu{
     list-style-type: none;
 }
 
