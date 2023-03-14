@@ -20,11 +20,13 @@ main {
     flex-grow: 1;
 }
 
-
 .header-img {
     min-height: 10vh;
-    background-image:url(https://picsum.photos/seed/1600/400) ;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg);
     background-position: 50% 10%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .header-img div {
@@ -45,8 +47,11 @@ main {
 
 .footer-img{
     min-height: 10vh;
-    background-image:url(https://picsum.photos/seed/1600/400) ;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg) ;
     background-position: 50% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .footer-img div{
