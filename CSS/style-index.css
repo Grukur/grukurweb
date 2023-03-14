@@ -7,6 +7,7 @@ html {
 *::before{
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
 .bg-webpage {
@@ -42,24 +43,27 @@ hr {
     flex-flow: column nowrap; /* es un shortcut para flex-direction y flex-wrap */
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
-.titles {
-    font-size: 20px;
-    text-align: center;
-    color: black;
+.align-table {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-top: 4px solid black;
+}
+
+.table-color {
+    display: inline-block;
+    background-color: rgb(80, 255, 74);
+    border: 8px double rgb(0, 168, 22);
 }
 
 .title-table {
     font-size: 20px;
     color: rgb(0, 0, 146);
     border-bottom: 3px solid black;
-}
-
-.bg-table {
-    background-color: rgb(80, 255, 74);
-    border: 8px double rgb(0, 168, 22);
 }
 
 .data-table {
@@ -87,28 +91,11 @@ hr {
 }
 
 .container {
-    padding: 5px; /* con esto centro las imagenes */
-    font-size: 15px;
     display: flex;
-    flex-flow: row nowrap; /* es un shortcut para flex-direction y flex-wrap */
-    justify-content: center;
-    align-items: center;
-    border: medium solid navy;
-    padding: 5px;
-    justify-content: space-around;
-}
-
-.items {
-    border: thin solid plum;
+    border-bottom: 5px solid black;
     background-color: darkmagenta;
-    padding: 5px;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    line-height: 15px;
-    text-align:center;
-    flex: 1 1 ;
-
+    justify-content: space-around;
+    padding-top: 5px;
 }
 
 .menu{
