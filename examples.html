@@ -4,13 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best Games</title>
+    <link rel="stylesheet" href="CSS/style-examples.css">
+    <script src="Scripts/slideshow.js"></script>
 </head>
+
 <body>
-    <h1>Hi, page for games I like</h1>
-    <hr>
-    <button><a href="index.html"><img src="Imagenes/Home.png" alt="" 
-        width="40" height="40"></a></button>
+
+    <header>
+        <!-- imagen header -->
+        <article class="header-img">
+            <div>
+            </div>
+
+        </article>
+
+        <!-- Flexbox -->
+        <article>
+            <section class="container-flex">
+                    <article class="items"><a href="Operadores.html">
+                        <img src="Imagenes/Javascript.jfif" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="index.html">
+                        <img src="Imagenes/Home.png" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="https://github.com/Grukur" target="_blank" rel="nodollow">
+                        <img src="Imagenes/GitHub2.png" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="https://www.linkedin.com/in/darold-trench-mancini/" target="_blank" rel="nodollow">
+                        <img src="Imagenes/Linkedin.jfif" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="shop.html">
+                        <img src="Imagenes/Shop.png" alt="" width="35" height="35"></a></article>
+            </section>        
+        </article> 
+    </header>
+
+    <main>
+        <!-- Slide show -->
+        <article>
+            <section class="container-slide"><!-- div.slides*6>div.numText[$/6]+img[style='width:100%']*1  shortcut to create all this in 1-->
+                <div class="mySlides">
+                    <div class="numText" >1/6</div>
+                        <img src="https://picsum.photos/800/800?random=1" style="width:70%">
+                </div>
+                <div class="mySlides">
+                    <div class="numText" >2/6</div>
+                        <img src="https://picsum.photos/800/800?random=2" style="width:70%">
+                </div>
+                <div class="mySlides">
+                    <div class="numText" >3/6</div>
+                        <img src="https://picsum.photos/800/800?random=3" style="width:70%">
+                </div>
+                <div class="mySlides">
+                    <div class="numText" >4/6</div>
+                        <img src="https://picsum.photos/800/800?random=4" style="width:70%">
+                </div>
+                <div class="mySlides">
+                    <div class="numText" >5/6</div>
+                        <img src="https://picsum.photos/800/800?random=5" style="width:70%">
+                </div>
+                <div class="mySlides">
+                    <div class="numText" >6/6</div>
+                        <img src="https://picsum.photos/800/800?random=6" style="width:70%">
+                </div>    
+                
+                <!-- next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=1" 
+                        style="width:100%" onclick='currentSlide(1)' alt="" ></div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=2" 
+                        style="width:100%" onclick='currentSlide(2)' alt="" ></div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=3" 
+                        style="width:100%" onclick='currentSlide(3)' alt="" ></div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=4" 
+                        style="width:100%" onclick='currentSlide(4)' alt="" ></div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=5" 
+                        style="width:100%" onclick='currentSlide(5)' alt="" ></div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://picsum.photos/800/800?random=6" 
+                        style="width:100%" onclick='currentSlide(6)' alt="" ></div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <article class="footer-img">
+            <div>     
+            </div>
+        </article>
+    </footer>
+    
 </body>
 
 </html>
