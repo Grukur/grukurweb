@@ -67,11 +67,19 @@ main {
     padding-top: 5px;
 }
 
+@media screen and (max-width: 720px) {
+  .form-container .img-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+}
+
 /* form */
 .form-container {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 180, 0, .7);
   border: thick solid black;
@@ -90,7 +98,7 @@ main {
   flex-flow: column;
   flex: 1 0 100%;
   margin: 2%;  
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;  
 }
 
@@ -103,7 +111,7 @@ main {
   border-radius: 10px;
   border: medium solid black;
   background-color: rgba(250, 380, 2500, .7);
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   margin: 5px;  
   padding: 5% 15%;  
@@ -113,7 +121,7 @@ main {
   display: flex;
   flex-flow: row;
   margin: 5px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: larger;
   font-weight: bolder;
