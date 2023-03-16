@@ -67,11 +67,12 @@ main {
     padding-top: 5px;
 }
 
-@media screen and (max-width: 720px) {
-  .form-container .img-form {
+@media screen and (max-width: 600px) {
+  .form-container {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      min-width: 300px;
   }
 }
 
@@ -85,6 +86,7 @@ main {
   border: thick solid black;
   border-radius: 50px;
   margin: 5% 25%;  
+  
 }
 
 .img-form {
