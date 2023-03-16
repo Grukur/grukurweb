@@ -10,6 +10,14 @@
     margin: 0;
 }
 
+@media screen and (max-width: 600px) {         
+    .window-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -71,11 +79,18 @@ main {
 
 .container-slide{
     position: relative;
+    flex-basis: content;
 }
 
 .mySlides{
     display: none;
     text-align: center;
+    flex: 1 1 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .cursor {
@@ -109,15 +124,23 @@ main {
 }
 
 .numText{
+    display: flex;
+    flex: 1 1 100%;
     color: white;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .window-img {
-    flex: 1 1 80%;
+    display: flex;
+    width: 100%;
 }
 
 .caption-container{
