@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User interaction</title>
-    <link rel="stylesheet" href="CSS/style-operadores.css">
-    <script src=""></script>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style-formulario.css">
+    <script src="Scripts/formulario.js"></script>
 </head>
 
 <body>
@@ -31,61 +31,42 @@
     </header>
 
     <main>
-        <div class="container">
-            <form action="Scripts/form.js">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">Nombre</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Apellido</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Ingrese su apellido..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="country">País</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    <option value="chile">Chile</option>
-                    <option value="argentina">Argentina</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="peru">Peru</option>
-                    <option value="ecuador">Ecuador</option>
-                    <option value="uruguay">Uruguay</option>
-                    <option value="paraguay">Paraguay</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="panama">Panama</option>
-                    <option value="costa rica">Costa Rica</option>
-                    <option value="mexico">Mexico</option>
-                </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="subject">Comentario</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Escriba su comentario.." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit">
-              </div>
-            </form>
+       <article class="form-container">
+        <div class="img-contianer">
+          <img class="img-form" src="Imagenes/icon.png" alt="">
+        </div>
+        <form class="form-1" action="posts.html" method="get" id="myForm">
+          <div class="form-2">
+            <input class="inputs" type="text" name="name" id="name" placeholder="Nombre" required></div>
+          <div class="form-2">
+            <input class="inputs" type="password" name="pass" id="pass" placeholder="Clave" required></div>
+          <div class="form-2">
+            <input class="inputs" type="email-1" name="email" id="email" placeholder="Email" required></div>
+          <div class="form-2">
+            <textarea class="inputs" name="msg-1" name="msg" id="msg" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
           </div>
 
+          <div class="sex-1">
+            <div>
+              <label for="male">Hombre</label>
+              <input class="dot-1" type="radio" name="sexo" id="male" value="Hombre">
+            </div>
+            <div>
+              <label for="female">Mujer</label>
+              <input class="dot-1" type="radio" name="sexo" id="female" value="Mujer">
+            </div>
+            <!-- <div>
+              <label for="other">Otro</label><input type="radio" name="sex" id="other">
+            </div> -->
+          </div>
+
+          <div class="class">
+            <button class="btn-1" type="submit">Enviar</button>
+            <button class="btn-1" type="reset">Reset</button>
+          </div>
+
+        </form>
+       </article>
     </main>
 
     <footer>

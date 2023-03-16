@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="CSS/style-posts.css">
+</head>
+<body>
+
+    <header>
+        <!-- Flexbox -->
+        <article>
+            <section class="container-flex">
+                    <article class="items"><a href="index.html">
+                        <img src="Imagenes/Home.png" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="examples.html">
+                        <img src="Imagenes/Check.jfif" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="shop.html">
+                        <img src="Imagenes/Shop.png" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="https://github.com/Grukur" target="_blank" rel="nodollow">
+                        <img src="Imagenes/GitHub2.png" alt="" width="35" height="35"></a></article>
+                    <article class="items"><a href="https://www.linkedin.com/in/darold-trench-mancini/" target="_blank" rel="nodollow">
+                        <img src="Imagenes/Linkedin.jfif" alt="" width="35" height="35"></a></article>
+            </section>        
+        </article> 
+
+        <article class="header-img"><div></div></article>
+    </header>
+    
+    <main>
+        <article class="container-post">
+            <div id="results"></div>
+
+            <script>
+                const resultsList = document.getElementById('results')
+                new URLSearchParams(window.location.search).forEach((value,name) => {
+                    resultsList.append(name + ': ' + value)
+                    resultsList.append(document.createElement('br'))
+                })
+            </script>
+
+            <article class="items back"><a href="Operadores.html">
+                <img src="Imagenes/Javascript.jfif" alt="" width="35" height="35"></a></article>
+
+        </article>
+    </main>
+    
+    <footer>
+        <article class="footer-img"><div></div></article>
+    </footer>
+    
+
+
+</body>
+</html>

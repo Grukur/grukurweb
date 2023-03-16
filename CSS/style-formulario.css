@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+main {
+    flex-grow: 1;
+}
+
+.header-img {
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.header-img div {
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.main-img{
+    min-height: 100vh;
+    background-image: url('');
+    background-position: center;
+}
+
+.main-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.footer-img{
+    min-height: 10vh;
+    background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg) ;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.footer-img div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkmagenta;
+    border-bottom: 5px solid black;    
+    padding-top: 5px;
+}
+
+/* form */
+.form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 180, 0, .7);
+  border: thick solid black;
+  border-radius: 50px;
+  margin: 5% 25%;  
+}
+
+.img-form {
+  border: thick solid rgba(0, 100, 0, .9);
+  border-radius: 50%;
+  margin: 5px;   
+}
+
+.form-1 {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 100%;
+  margin: 2%;  
+  justify-content: center;
+  align-items: center;  
+}
+
+.form-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  border-radius: 10px;
+  border: medium solid black;
+  background-color: rgba(250, 380, 2500, .7);
+  justify-content: center;
+  text-align: center;
+  margin: 5px;  
+  padding: 5% 15%;  
+}
+
+.sex-1 {
+  display: flex;
+  flex-flow: row;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.dot-1 {
+  margin: 5px;
+
+}
+
+.btn-1 {
+  margin: 5px;
+  background-color: rgba(0, 100, 0, .8);
+  border: medium solid rgba(0, 70, 0, .8);
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+
+}
+
+
+
