@@ -116,6 +116,10 @@ main {
     top: 0;
 }
 
+.window-img {
+    flex: 1 1 80%;
+}
+
 .caption-container{
     text-align: center;
     background-color: #222;

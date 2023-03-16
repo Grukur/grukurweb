@@ -1,13 +1,10 @@
 
-* {
-    box-sizing: border-box;
-}
-
 *,
 *::after,
 *::before{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,7 +14,7 @@ body {
 }
 
 main {
-    flex-grow: 1;
+    flex: 1 1 100%;
 }
 
 .header-img {
@@ -68,11 +65,11 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  .form-container {
+  .form-container .form-2 {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      min-width: 300px;
+      flex: 1 1 100%;            
   }
 }
 
@@ -80,43 +77,40 @@ main {
 .form-container {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: rgba(0, 180, 0, .7);
   border: thick solid black;
   border-radius: 50px;
-  margin: 5% 25%;  
-  
+  margin: 5% 25%;    
 }
 
 .img-form {
   border: thick solid rgba(0, 100, 0, .9);
   border-radius: 50%;
-  margin: 5px;   
+  margin: 5px;
+  flex: 1 1 100%;   
 }
 
 .form-1 {
-  display: flex;
-  flex-flow: column;
-  flex: 1 0 100%;
-  margin: 2%;  
-  justify-content: space-around;
-  align-items: center;  
+ 
+ 
 }
 
 .form-2 {
   display: flex;
-  justify-content: center;
+
 }
 
 .inputs {
+  display: inline;
   border-radius: 10px;
   border: medium solid black;
   background-color: rgba(250, 380, 2500, .7);
-  justify-content: space-around;
   text-align: center;
+  flex: 1 0 100%;
   margin: 5px;  
-  padding: 5% 15%;  
+  padding: 8px 35px;  
 }
 
 .sex-1 {
@@ -124,14 +118,17 @@ main {
   flex-flow: row;
   margin: 5px;
   justify-content: space-around;
-  align-items: center;
   font-size: larger;
   font-weight: bolder;
 }
 
 .dot-1 {
   margin: 5px;
+}
 
+.btn-father {
+  display: flex;
+  flex-flow: column;
 }
 
 .btn-1 {
@@ -143,7 +140,6 @@ main {
   color: aliceblue;
   font-size: large;
   font-weight: bold;
-
 }
 
 
