@@ -1,8 +1,4 @@
-
-* {
-    box-sizing: border-box;
-}
-
+/* Base pre settings */
 *,
 *::after,
 *::before{
@@ -10,6 +6,7 @@
     margin: 0;
 }
 
+/* Media screen set */
 @media screen and (max-width: 600px) {         
     .window-img {
         display: flex;
@@ -18,6 +15,7 @@
     }
 }
 
+/* Sticky setting for the footer */
 body {
     display: flex;
     flex-direction: column;
@@ -28,6 +26,7 @@ main {
     flex-grow: 1;
 }
 
+/* Background Images and settings */
 .header-img {
     min-height: 10vh;
     background-image:url(https://meridionalradio.cl/wp-content/uploads/2021/12/programacion_contenido2-1080x641.jpg);
@@ -67,6 +66,7 @@ main {
     background-color: rgba(0, 0, 0, .2);
 }
 
+/* Head Links Bar */
 .container-flex{
     display: flex;
     border-bottom: 5px solid black;  
@@ -75,8 +75,8 @@ main {
     padding-top: 5px;
 }
 
+/* Content */
 /* Slideshow */
-
 .container-slide{
     position: relative;
     flex-basis: content;
@@ -118,6 +118,7 @@ main {
     border-radius: 3px 0 0 3px;
 }
 
+/* Image Hover set */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, .8);
